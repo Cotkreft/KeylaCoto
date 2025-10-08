@@ -21,7 +21,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
- 
 }
 
 header {
@@ -128,6 +127,8 @@ span {
 .home-img img {
     position: relative;
     width: 32vw;
+    max-width: 100%; /* prevent overflow */
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px #FCC5D9;
     cursor: pointer;
@@ -255,7 +256,6 @@ span {
 
     .home-img img {
         width: 70vw;
-        margin-top: 4rem;
     }
 }
 
@@ -476,7 +476,7 @@ body::before {
 
 @media (max-width: 768px) {
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     header {
@@ -540,6 +540,53 @@ body::before {
         margin: 2rem 1rem 2rem 0;
     }
 }
+
+/*making phone friendly */
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 90vw;
+    }
+
+    section {
+        padding: 3rem 1rem 3rem;
+    }
+
+    .skills ul,
+    .education ul,
+    .experience ul {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.8rem;
+    }
+
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.4rem;
+        margin: 1.5rem 0.5rem 1.5rem 0;
+    }
+}
+
 
 /*making phone friendly */
 @media (max-width: 480px) {
