@@ -220,16 +220,16 @@ span {
         content: "Marketing student";
     }
     21%, 40% {
-        content: "Creative";
+        content: "Creative person";
     }
     41%, 60% {
         content: "Video Editor";
     }
     61%, 80% {
-        content: "Youtuber";
+        content: "Graphhic Designer";
     }
     81%, 100% {
-        content: "3D model";
+        content: "3D model student";
     }
 }
 
@@ -344,7 +344,7 @@ body::before {
     }
 }
 
-/* Individual bubble styles */
+/* bubbles styles */
 .bubble:nth-child(1) {
     left: 5%;
     width: 25px;
@@ -471,3 +471,104 @@ body::before {
   opacity: 0.85;
 }
 .site-footer a:hover { opacity: 1; }
+
+/* ========== phone Styles ========== */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1.2rem 5%;
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
+        padding: 4rem 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+
+    .home-img img {
+        width: 80vw;
+    }
+
+    .typing-text {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+
+    section {
+        padding: 4rem 2rem;
+    }
+
+    .skills ul,
+    .education ul,
+    .experience ul {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+
+    .social-icons a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.6rem;
+        margin: 2rem 1rem 2rem 0;
+    }
+}
+
+/*making phone friendly */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 90vw;
+    }
+
+    .typing-text {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.8rem;
+    }
+}
